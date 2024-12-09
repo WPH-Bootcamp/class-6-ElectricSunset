@@ -10,7 +10,7 @@
 
   @if (map.has-key($colors, $type)) {
     $typeMap: map.get($colors, $type);
-    @if (map-has-key($typeMap, $level)) {
+    @if (map.has-key($typeMap, $level)) {
       @return map.get($typeMap, $level);
     }
   }
